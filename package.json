@@ -4,6 +4,8 @@
   "description": "ReactJS NodeJS Sample Application",
   "main": "index.js",
   "scripts": {
+    "dev": "webpack -d --watch",
+    "build": "webpack -p",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,6 +23,13 @@
   },
   "homepage": "https://github.com/gvanderberg/react-node-sample#readme",
   "dependencies": {
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "react-router": "^2.8.1",
     "webpack": "^1.13.2"
   }
 }
