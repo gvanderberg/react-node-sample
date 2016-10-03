@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/gvanderberg/react-node-sample/issues"
   },
-  "homepage": "https://github.com/gvanderberg/react-node-sample#readme"
+  "homepage": "https://github.com/gvanderberg/react-node-sample#readme",
+  "dependencies": {
+    "webpack": "^1.13.2"
+  }
 }
