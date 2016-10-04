@@ -87,5 +87,5 @@ And now we tell webpack to use babel-loader
     npm install react --save
     npm install react-dom --save
 
-    [sitepoint](https://www.sitepoint.com/building-a-react-universal-blog-app-a-step-by-step-guide/)
-    [codementor](https://www.codementor.io/reactjs/tutorial/beginner-guide-setup-reactjs-environment-npm-babel-6-webpack)
+[sitepoint](https://www.sitepoint.com/building-a-react-universal-blog-app-a-step-by-step-guide/)
+[codementor](https://www.codementor.io/reactjs/tutorial/beginner-guide-setup-reactjs-environment-npm-babel-6-webpack)
