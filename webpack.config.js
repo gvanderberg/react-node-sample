@@ -5,7 +5,7 @@ var BUILD_DIR = path.resolve(__dirname, "src/public");
 var APP_DIR = path.resolve(__dirname, "src");
 
 var config = {
-    entry: APP_DIR + "/app-client.jsx",
+    entry: APP_DIR + "/client.jsx",
     module: {
         loaders: [
             {

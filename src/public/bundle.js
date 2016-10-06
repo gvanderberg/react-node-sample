@@ -42,9 +42,9 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/*!****************************!*\
-  !*** ./src/app-client.jsx ***!
-  \****************************/
+/*!************************!*\
+  !*** ./src/client.jsx ***!
+  \************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -27880,10 +27880,10 @@
 	var App = function (_React$Component) {
 	    _inherits(App, _React$Component);
 	
-	    function App() {
+	    function App(props) {
 	        _classCallCheck(this, App);
 	
-	        return _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).apply(this, arguments));
+	        return _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this, props));
 	    }
 	
 	    _createClass(App, [{
@@ -28018,10 +28018,13 @@
 	var NavBar = function (_React$Component) {
 	    _inherits(NavBar, _React$Component);
 	
-	    function NavBar() {
+	    function NavBar(props) {
 	        _classCallCheck(this, NavBar);
 	
-	        return _possibleConstructorReturn(this, (NavBar.__proto__ || Object.getPrototypeOf(NavBar)).apply(this, arguments));
+	        var _this = _possibleConstructorReturn(this, (NavBar.__proto__ || Object.getPrototypeOf(NavBar)).call(this, props));
+	
+	        _this.handleClick = _this.handleClick.bind(_this);
+	        return _this;
 	    }
 	
 	    _createClass(NavBar, [{
@@ -28029,6 +28032,8 @@
 	        value: function handleClick() {
 	            $(".navbar-collapse").removeClass("in");
 	            $("html,body").scrollTop(0);
+	
+	            console.log(this);
 	        }
 	    }, {
 	        key: "render",
@@ -28313,6 +28318,8 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
+	var _reactRouter = __webpack_require__(/*! react-router */ 172);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -28339,7 +28346,21 @@
 	                _react2.default.createElement(
 	                    "h1",
 	                    null,
-	                    "NotFound"
+	                    "404"
+	                ),
+	                _react2.default.createElement(
+	                    "h2",
+	                    null,
+	                    "Page not found!"
+	                ),
+	                _react2.default.createElement(
+	                    "p",
+	                    null,
+	                    _react2.default.createElement(
+	                        _reactRouter.Link,
+	                        { to: "/" },
+	                        "Go back to the main page"
+	                    )
 	                )
 	            );
 	        }

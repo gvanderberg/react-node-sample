@@ -1,10 +1,18 @@
 import React from "react";
-import {Link} from "react-router";
+import { Link } from "react-router";
 
 class NavBar extends React.Component {
+    constructor(props) {
+        super(props);
+
+        this.handleClick = this.handleClick.bind(this);
+    }
+
     handleClick() {
-        $(".navbar-collapse").removeClass("in")
-        $("html,body").scrollTop(0)
+        $(".navbar-collapse").removeClass("in");
+        $("html,body").scrollTop(0);
+
+        console.log(this);
     }
 
     render() {

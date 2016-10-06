@@ -1,10 +1,14 @@
 import React from "react";
-import {render} from "react-dom";
+import { render } from "react-dom";
 
 import Footer from "./FooterComponent.jsx";
 import NavBar from "./NavBarComponent.jsx";
 
 class App extends React.Component {
+    constructor(props) {
+        super(props);
+    }
+
     render() {
         const data = [
             {
