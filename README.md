@@ -87,7 +87,15 @@ And now we tell webpack to use babel-loader
     npm install react --save
     npm install react-dom --save
 
+[expressiso](https://github.com/jcreamer898/expressiso)
+
+[react-starter-kit](https://github.com/kriasoft/react-starter-kit)
+
+[react-router-mega-demo](https://github.com/ryanflorence/react-router-mega-demo)
+
 [isomorphic-lab](https://github.com/insin/isomorphic-lab)
+
+[strongblog](https://strongloop.com/strongblog/node-js-react-isomorphic-javascript-why-it-matters/)
 
 [sitepoint](https://www.sitepoint.com/building-a-react-universal-blog-app-a-step-by-step-guide/)
 

@@ -1,6 +1,3 @@
-//import React from "react";
-//import { Router } from "react-router";
-
 var express = require("express");
 var path = require("path");
 
